@@ -1,0 +1,385 @@
+@media(min-width:$min-WidthMob) {
+  header {
+    @include bgImg("../img/header-home-bg.jpg");
+    height: 20vh;
+
+    >section {
+      background-color: $defaultLayer;
+      width: 100%;
+      height: 100%;
+
+      >section {
+        @include flexUseful(column, 1vh, 0vh, center, center);
+        height: 100%;
+        width: 30%;
+      }
+    }
+
+    nav {
+      >ul {
+        display: none;
+      }
+      li {
+        list-style-type: none;
+      }
+    }
+
+    h1 {
+      color: $defaultWhite;
+      font-size: $fontSizeH1Mob;
+      font-weight: 300;
+      padding-left: 10%;
+    }
+
+    a {
+      color: $defaultWhite;
+      text-decoration: none;
+    }
+
+    details {
+      padding-top: 3%;
+      width: 95%;
+      text-align: right;
+      position: absolute;
+      >ul {
+        @include flexThings(column,2vh,0vh);
+      }
+
+      a {
+        text-transform: uppercase;
+      }
+    }
+
+    summary {
+      color: $defaultWhite;
+      font-size: 30px;
+    }
+  }
+
+  footer {
+    background-color: $defaultBlack;
+    @include flexCol;
+    align-items: flex-end;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    row-gap: 3vh;
+    border-top: 1px solid lightgray;
+
+    >section {
+      @include flexCol;
+      width: 100%;
+      align-items: center;
+      row-gap: 1vh;
+    }
+
+    article {
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    p {
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+    }
+
+    a {
+      border: 1px solid $defaultWhite;
+      border-radius: 50%;
+      color: $defaultWhite;
+      width: 3vh;
+      height: 3vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    aside {
+      width: 30%;
+      @include flexCol;
+      align-items: center;
+      row-gap: 1vh;
+    }
+
+    i {
+      font-size: 14px;
+    }
+
+  }
+
+  .about {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: $defaultBlack;
+    @include flexCol;
+    align-items: center;
+    row-gap: 5vh;
+
+    >section {
+      width: 95%;
+      @include flexThings(column, 3vh, 0);
+      align-items: center;
+    }
+
+    h2 {
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+
+    p,
+    h2 {
+      color: $defaultWhite;
+    }
+
+    p {
+      text-align: center;
+      font-size: $fontSIzePMob;
+      line-height: 1.5;
+
+      >span {
+        color: firebrick;
+        font-weight: 500;
+      }
+    }
+
+    article {
+      @include flexCol;
+      row-gap: 1vh;
+
+      >span {
+        border-bottom: 1px solid $defaultWhite;
+      }
+    }
+
+    >a {
+      color: $defaultWhite;
+      border: 1px solid $defaultWhite;
+      border-radius: 50%;
+      width: 3vh;
+      height: 3vh;
+      @include flexUseful(row, 0, 0, center, center);
+      text-decoration: none;
+    }
+  }
+
+  .features{
+    @include flexCol;
+    align-items: center;
+    background-color: $defaultGray;
+    row-gap: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+
+    h2{
+      color: $defaultWhite;
+      font-size:$fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+
+    h3{
+      color: $defaultWhite;
+      font-size: $fontSizeH3Mob;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    p{
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+      line-height: 1.5;
+    }
+
+    >section{
+      @include flexCol;
+      row-gap: 2vh;
+      a{
+        text-decoration: none;
+        color: $defaultWhite;
+        text-align: center;
+      }
+    }
+
+    img{
+      opacity: .3;
+      height: 38vh;
+      width: 45vh;
+    }
+
+    >a{
+      width: 3vh;
+      height: 3vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: $defaultWhite;
+      border: 1px solid $defaultWhite;
+      border-radius: 50%;
+    }
+  }
+
+  .d-none {
+    display: block!important;
+  }
+  
+  .organization {
+  @include flexThings(column, 3vh, 0vh);
+  align-items: center;
+  row-gap: 3vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  background-color: $defaultBlack;
+  color: $defaultWhite;
+  
+  
+  article {
+      @include flexCol;
+      row-gap: 5vh;
+      align-items: center;
+  
+      figure {
+        @include flexCol;
+        row-gap: 5vh;
+        align-items: center;
+      }
+      figcaption {
+        @include flexCol;
+        align-items: center;
+        row-gap: 3vh;
+        width: 95%;
+      }
+      >a {
+        color: $defaultWhite;
+        border: 1px solid $defaultWhite;
+        border-radius: 50%;
+        width: 3vh;
+        height: 3vh;
+        @include flexUseful(row, 0, 0, center, center);
+        text-decoration: none;
+      }
+    }
+  
+    img {
+      width: 100%;
+    }
+  
+    section {
+      @include flexCol;
+      row-gap: 7vh;
+      align-items: center;
+      i {
+        font-size: 5vh;
+      }
+    }
+  
+  
+    aside {
+      @include flexUseful(column,1vh,0vh,center,center);
+      width: 35vh;
+      height: 35vh;
+      border-radius: 50%;
+      text-align: center;
+      background-color: $defaultGray;
+    }
+    h2 {
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: $fontSizeH3Mob;
+    }
+    p,
+    a {
+      font-size: $fontSIzePMob;
+    }
+  
+    a {
+      text-decoration: none;
+      color: $defaultWhite
+    }
+  }
+  
+  .contact {
+    @include flexCol;
+    align-items: center;
+    row-gap: 5vh;
+    background-color: $defaultGray;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  
+    form {
+      @include flexThings(column, 2vh, 0);
+      width: 95%;
+      align-items: center;
+    }
+  
+    h2 {
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+      color: $defaultWhite;
+    }
+  
+    input {
+      width: 100%;
+      height: 4vh;
+      padding: 1%;
+      background-color: $defaultWhite;
+      border-radius: 5px;
+      border: none;
+    }
+  
+    textarea {
+      height: 15vh;
+      width: 100%;
+      padding: 1%;
+      background-color: $defaultWhite;
+      border-radius: 5px;
+      border: none;
+    }
+  
+    [type="submit"] {
+      width: 30%;
+      background-color: rgb(210, 210, 210);
+      border: none;
+      font-size: $fontSIzePMob;
+    }
+  
+    ::placeholder {
+      font-size: $fontSIzePMob
+    }
+  
+    >section {
+      @include flexCol;
+      row-gap: 1vh;
+      width: 95%;
+      align-items: center;
+    }
+  
+    h3 {
+      color: $defaultWhite;
+      text-transform: uppercase;
+    }
+  
+    address {
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+    }
+
+    i{
+      padding-right: 1vh;
+    }
+  
+    a {
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+    }
+  
+    iframe {
+      height: 40vh;
+      width: 100%;
+    }
+  }
+}
