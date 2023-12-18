@@ -233,8 +233,8 @@
   background-color: $defaultBlack;
   color: $defaultWhite;
   
-  
   article {
+    width: 90%;
       @include flexCol;
       row-gap: 5vh;
       align-items: center;
@@ -277,8 +277,8 @@
   
     aside {
       @include flexUseful(column,1vh,0vh,center,center);
-      width: 35vh;
-      height: 35vh;
+      width: 40vh;
+      height: 40vh;
       border-radius: 50%;
       text-align: center;
       background-color: $defaultGray;
@@ -290,6 +290,9 @@
     h3 {
       text-transform: uppercase;
       font-size: $fontSizeH3Mob;
+    }
+    p{
+      width: 80%;
     }
     p,
     a {

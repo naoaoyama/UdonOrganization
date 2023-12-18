@@ -146,31 +146,31 @@
           background-color: $defaultWhite;
         }
       }
-    }
-    h2 {
-      font-size: $fontSizeH2Des;
-    }
-    h3 {
-      font-size: $fontSizeH3Des;
-    }
-    p{
-      font-size: $fontSizePDes;
-    }
-    aside {
-      width: 41vh;
-      height: 41vh;
-    }
-    section {
-      justify-content: center;
-      column-gap: 5vh;
-      width: 90%;
-
-      >a {
-        font-size: 20px;
+      h2 {
+        font-size: $fontSizeH2Des;
+      }
+      h3 {
+        font-size: $fontSizeH3Des;
+      }
+      p{
+        font-size: $fontSizePDes;
+      }
+      aside {
+        width: 45vh;
+        height: 45vh;
+      }
+      section {
+        justify-content: center;
+        column-gap: 5vh;
         width: 90%;
-        &:hover {
-          background-color: transparent;
-          color: rgb(168, 167, 167);
+  
+        >a {
+          font-size: 20px;
+          width: 90%;
+          &:hover {
+            background-color: transparent;
+            color: rgb(168, 167, 167);
+          }
         }
       }
     }

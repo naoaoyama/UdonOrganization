@@ -87,6 +87,7 @@
       width: 30vh;
       height: 30vh;
       border-radius: 50%;
+      object-fit: cover;
     }
     figcaption {
       font-size: $fontSizeH3Mob;
@@ -132,19 +133,22 @@
       text-align: center;
     }
     section {
-      border: 1px solid $defaultGray;
       padding: 2%;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 90%;
     }
-    video {
-      object-fit: cover;
-      object-position: center;
-      width: 100%;
-      height: 100%;
-   }
+    figure{
+      img {
+        object-fit: cover;
+        object-position: center;
+        width:100%;
+        height: 50VH;
+        object-fit: cover;
+     }
+
+    }
    
    
     
@@ -231,6 +235,12 @@
       font-size: $fontSizeH2Mob;
       color: $defaultGray;
       text-transform: uppercase;
+    }
+
+    img{
+      width: 30vh;
+      height: 30vh;
+      object-fit: cover;
     }
     span {
       width: 20%;

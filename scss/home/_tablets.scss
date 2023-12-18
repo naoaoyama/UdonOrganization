@@ -122,6 +122,7 @@
             font-size: $fontSizeH2Tab;
         }
         article {
+            width: 80%;
             row-gap: 8vh;
             figure {
                 flex-direction: row;
@@ -135,7 +136,16 @@
             figcaption {
                 width: 50%;
             }
-
+            aside{
+                width: 40vh;
+                height: 40vh;
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    // font-size:25px;
+                }
+            }
             >a{
                 width: 8vh;
                 height: 8vh;

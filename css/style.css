@@ -37,6 +37,8 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 20vh;
   }
   header > section {
@@ -265,6 +267,7 @@ h2 {
     color: whitesmoke;
   }
   .organization article {
+    width: 90%;
     display: flex;
     flex-direction: column;
     row-gap: 5vh;
@@ -318,8 +321,8 @@ h2 {
          column-gap: 0vh;
     justify-content: center;
     align-items: center;
-    width: 35vh;
-    height: 35vh;
+    width: 40vh;
+    height: 40vh;
     border-radius: 50%;
     text-align: center;
     background-color: rgb(38, 40, 38);
@@ -331,6 +334,9 @@ h2 {
   .organization h3 {
     text-transform: uppercase;
     font-size: 20px;
+  }
+  .organization p {
+    width: 80%;
   }
   .organization p,
   .organization a {
@@ -445,6 +451,8 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 62vh;
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -523,6 +531,8 @@ h2 {
     width: 30vh;
     height: 30vh;
     border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .event figcaption {
     font-size: 20px;
@@ -565,6 +575,8 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .lesson > article {
     display: flex;
@@ -576,20 +588,20 @@ h2 {
     text-align: center;
   }
   .lesson section {
-    border: 1px solid rgb(38, 40, 38);
     padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
   }
-  .lesson video {
+  .lesson figure img {
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
     width: 100%;
-    height: 100%;
+    height: 50VH;
+    object-fit: cover;
   }
   .lesson h2 {
     font-size: 25px;
@@ -702,6 +714,12 @@ h2 {
     color: rgb(38, 40, 38);
     text-transform: uppercase;
   }
+  .recipe img {
+    width: 30vh;
+    height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .recipe span {
     width: 20%;
     border-bottom: 2px solid rgb(38, 40, 38);
@@ -811,6 +829,8 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .headfea details > ul {
     display: flex;
@@ -1262,6 +1282,7 @@ h2 {
     font-size: 30px;
   }
   .organization article {
+    width: 80%;
     row-gap: 8vh;
   }
   .organization article figure {
@@ -1275,6 +1296,13 @@ h2 {
   }
   .organization article figcaption {
     width: 50%;
+  }
+  .organization article aside {
+    width: 40vh;
+    height: 40vh;
+  }
+  .organization article aside h3 {
+    font-size: 30px;
   }
   .organization article > a {
     width: 8vh;
@@ -1725,30 +1753,30 @@ h2 {
     color: black;
     background-color: whitesmoke;
   }
-  .organization h2 {
+  .organization article h2 {
     font-size: 34px;
   }
-  .organization h3 {
+  .organization article h3 {
     font-size: 28px;
   }
-  .organization p {
+  .organization article p {
     font-size: 16px;
   }
-  .organization aside {
-    width: 41vh;
-    height: 41vh;
+  .organization article aside {
+    width: 45vh;
+    height: 45vh;
   }
-  .organization section {
+  .organization article section {
     justify-content: center;
     -moz-column-gap: 5vh;
          column-gap: 5vh;
     width: 90%;
   }
-  .organization section > a {
+  .organization article section > a {
     font-size: 20px;
     width: 90%;
   }
-  .organization section > a:hover {
+  .organization article section > a:hover {
     background-color: transparent;
     color: rgb(168, 167, 167);
   }
